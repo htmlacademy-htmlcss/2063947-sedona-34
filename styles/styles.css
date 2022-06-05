@@ -222,6 +222,7 @@ body {
     line-height: 20px;
     text-transform: none;
     border-style: none;
+    background: transparent;
 }
 
 .catalog-results-title {
