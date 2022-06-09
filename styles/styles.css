@@ -14,13 +14,20 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     background-color: #FFFFFF;
     color: #000000;
-    margin: 0;
 }
 
 .button {
@@ -33,6 +40,32 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-list-main {
+    width: 490px; /* ширина контейнера 390px плюс запас 100px */
+}
+
+.navigation-list-user {
+    width: 265px; /* округленное значение */
+    margin-left: auto;
+}
+
+.navigation-link {
+    width: 139px;
+    margin: 0;
+    padding: 0; 
 }
 
 .navigation-link-main {
@@ -63,13 +96,27 @@ body {
     border-radius: 4px;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
 .main-index {
     background-color: #FFFFFF;
     color: #000000;
+    text-align: center;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.image-sedona {
+    background-color: lightslategray;
     background-image: url("../images/index-background.jpg");
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: 1200px 485px;
-    text-align: center;
 }
 
 .about-sedona {
@@ -93,39 +140,52 @@ body {
     background: #82B3D3;
 }
 
-.advantages-list-village {
-    color: #333333;
-    background: #FFFFFF;
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-.advantages-list-bridge {
+.advantages-list-village {
+    display: flex;
     color: #333333;
     background: #FFFFFF;
-}
+    }
 
 .block-1 {
     background: rgba(131, 179, 211, 0.12);
     color: #000000;
+    width: 33.3333%;
+}
+
+.block-2 {
+    width: 33.3333%;
 }
 
 .block-3 {
     background: rgba(131, 179, 211, 0.12);
     color: #000000;
+    width: 33.3333%;
 }
 
 .block-4 {
     background: rgba(131, 179, 211, 0.12);
     color: #000000;
+    width: 33.3333%;
 }
 
 .block-5 {
     background: rgba(131, 179, 211, 0.2);
     color: #000000;
+    width: 33.3333%;
 }
 
 .block-6 {
     background: rgba(131, 179, 211, 0.12);
     color: #000000;
+    width: 33.3333%;
 }
 
 .hotels-search {
