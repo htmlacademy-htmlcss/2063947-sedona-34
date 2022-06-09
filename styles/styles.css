@@ -145,6 +145,13 @@ body {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+}
+
+.advantages-item-advantage-1 {
+    width: 100%;
+}
+
+.advantages-item-advantage-2 {
     width: 100%;
 }
 
