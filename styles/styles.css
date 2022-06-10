@@ -51,6 +51,7 @@ body {
 .navigation-list {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .navigation-list-main {
@@ -62,9 +63,10 @@ body {
     margin-left: auto;
 }
 
-.navigation-link {
+.navigation-link-logo {
     width: 139px;
     margin: 0;
+    margin-right: 30px;
     padding: 0; 
 }
 
@@ -133,6 +135,8 @@ body {
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .advantages-item {
@@ -213,6 +217,7 @@ body {
 
 .hotels-search {
     text-align: center;
+    height: 417px;
 }
 
 .hotels-search-1 {
@@ -224,6 +229,11 @@ body {
 
 .hotels-search-2 {
     color: #333333;
+}
+
+.subscription {
+    text-align: center; 
+    color:#000000;
 }
 
 .subscription-main {
@@ -251,12 +261,44 @@ body {
     border-radius: 0px 10px 10px 0px;
 }
 
+.page-footer-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.page-footer-container-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-social {
+    width: 142px;
+}
+
+.footer-contacts {
+    width: 720px;
+    text-align: center;
+}
+
+.footer-htmlacademy-link {
+    width: 115px;
+}
+
 .footer-contacts-phone {
     color: #000000;
     font-size: 40px;
     line-height: 40px;
     text-decoration: none;
     font-style: normal;
+}
+
+.footer-social-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .inner-header {
@@ -273,12 +315,28 @@ body {
 }
 
 .breadcrumbs {
+    display: flex;
     font-size: 16px;
     line-height: 21px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .breadcrumbs-link {
     color: inherit;
+}
+
+.catalog-filters-list-infrastructure {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-filters-list-accomodation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .catalog-filters-title {
@@ -290,6 +348,25 @@ body {
 .catalog-filters-item {
     font-size: 18px;
     line-height: 21px;
+}
+
+.catalog-filters-form {
+    display: flex;
+}
+
+.catalog-filters-group-infrastructure {
+    margin-right: 70px;
+    padding: 0;
+}
+
+.catalog-filters-group-accomodation {
+    padding: 0;
+}
+
+.filter-buttons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .apply-button {
@@ -306,6 +383,10 @@ body {
     text-transform: none;
     border-style: none;
     background: transparent;
+}
+
+.catalog-results-list {
+    list-style: none;
 }
 
 .catalog-results-title {
@@ -356,6 +437,13 @@ body {
 
 .favorite-button {
     background-color: #7DB54F;
+}
+
+.stars-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .rating {
