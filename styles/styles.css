@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url(fonts/ptsans-400.woff2) format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,33 +10,24 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url(fonts/ptsans-700.woff2) format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
-@font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url(fonts/ptsans-400.woff2) format("woff2");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 700;
-    src: url(fonts/ptsans-700.woff2) format("woff2");
-    font-display: swap;
+html {
+    height: 100%;
 }
 
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     background-color: #FFFFFF;
     color: #000000;
-    margin: 0;
 }
 
 .button {
@@ -51,12 +42,41 @@ body {
     cursor: pointer;
 }
 
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-list-main {
+    width: 490px; /* ширина контейнера 390px плюс запас 100px */
+}
+
+.navigation-list-user {
+    width: 265px; /* округленное значение */
+    margin-left: auto;
+}
+
+.navigation-link-logo {
+    width: 139px;
+    margin: 0;
+    margin-right: 30px;
+    padding: 0; 
+}
+
 .navigation-link-main {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     text-decoration: none;
     text-align: center;
+    color: #000000;
 }
 
 .navigation-link-main:visited {
@@ -78,13 +98,27 @@ body {
     border-radius: 4px;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
 .main-index {
     background-color: #FFFFFF;
     color: #000000;
+    text-align: center;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.image-sedona {
+    background-color: lightslategray;
     background-image: url("../images/index-background.jpg");
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: 1200px 485px;
-    text-align: center;
 }
 
 .about-sedona {
@@ -98,13 +132,11 @@ body {
     line-height: 36px;
 }
 
-.advantages-list {
-    text-align: center;
-}
-
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .advantages-item {
@@ -112,43 +144,80 @@ body {
     background: #82B3D3;
 }
 
-.advantages-list-village {
-    color: #333333;
-    background: #FFFFFF;
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.advantages-list-bridge {
+.advantages-item-advantage-1 {
+    width: 100%;
+}
+
+.advantages-item-advantage-2 {
+    width: 100%;
+}
+
+.advantages-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.advantages-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.advantages-list-village {
+    display: flex;
     color: #333333;
     background: #FFFFFF;
-}
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
 
 .block-1 {
     background: rgba(131, 179, 211, 0.12);
     color: #000000;
+    width: 33.3333%;
+}
+
+.block-2 {
+    width: 33.3333%;
 }
 
 .block-3 {
     background: rgba(131, 179, 211, 0.12);
     color: #000000;
+    width: 33.3333%;
 }
 
 .block-4 {
     background: rgba(131, 179, 211, 0.12);
     color: #000000;
+    width: 33.3333%;
 }
 
 .block-5 {
     background: rgba(131, 179, 211, 0.2);
     color: #000000;
+    width: 33.3333%;
 }
 
 .block-6 {
     background: rgba(131, 179, 211, 0.12);
     color: #000000;
+    width: 33.3333%;
 }
 
 .hotels-search {
     text-align: center;
+    height: 417px;
 }
 
 .hotels-search-1 {
@@ -160,6 +229,11 @@ body {
 
 .hotels-search-2 {
     color: #333333;
+}
+
+.subscription {
+    text-align: center; 
+    color:#000000;
 }
 
 .subscription-main {
@@ -187,12 +261,44 @@ body {
     border-radius: 0px 10px 10px 0px;
 }
 
+.page-footer-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.page-footer-container-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-social {
+    width: 142px;
+}
+
+.footer-contacts {
+    width: 720px;
+    text-align: center;
+}
+
+.footer-htmlacademy-link {
+    width: 115px;
+}
+
 .footer-contacts-phone {
     color: #000000;
     font-size: 40px;
     line-height: 40px;
     text-decoration: none;
     font-style: normal;
+}
+
+.footer-social-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .inner-header {
@@ -209,12 +315,28 @@ body {
 }
 
 .breadcrumbs {
+    display: flex;
     font-size: 16px;
     line-height: 21px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .breadcrumbs-link {
     color: inherit;
+}
+
+.catalog-filters-list-infrastructure {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-filters-list-accomodation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .catalog-filters-title {
@@ -226,6 +348,25 @@ body {
 .catalog-filters-item {
     font-size: 18px;
     line-height: 21px;
+}
+
+.catalog-filters-form {
+    display: flex;
+}
+
+.catalog-filters-group-infrastructure {
+    margin-right: 70px;
+    padding: 0;
+}
+
+.catalog-filters-group-accomodation {
+    padding: 0;
+}
+
+.filter-buttons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .apply-button {
@@ -241,6 +382,11 @@ body {
     line-height: 20px;
     text-transform: none;
     border-style: none;
+    background: transparent;
+}
+
+.catalog-results-list {
+    list-style: none;
 }
 
 .catalog-results-title {
@@ -248,6 +394,7 @@ body {
     line-height: 36px;
     font-weight: bold;
     text-transform: uppercase;
+    color: #000000;
 }
 
 .select-control {
@@ -290,6 +437,13 @@ body {
 
 .favorite-button {
     background-color: #7DB54F;
+}
+
+.stars-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .rating {
