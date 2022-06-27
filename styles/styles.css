@@ -578,6 +578,8 @@ body {
 
 .catalog-results-buttons {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .select-control {
@@ -604,20 +606,25 @@ body {
   color: #333333;
   margin: 0;
   padding: 0;
+  margin-bottom: 16px;
+  justify-content: space-between;
 }
 
 .catalog-results-rating {
   display: flex;
+  justify-content: space-between;
 }
 
 .result-hotel {
   margin: 0;
   padding: 0;
+  width: 140px;
 }
 
 .result-price {
   margin: 0;
   padding: 0;
+  width: 140px;
 }
 
 .catalog-results-link {
@@ -630,7 +637,9 @@ body {
   line-height: 20px;
   font-weight: bold;
   border-radius: 4px;
-  padding: 9px 26px 9px 26px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  width: 140px;
 }
 
 .catalog-results-favorites {
@@ -639,7 +648,9 @@ body {
   line-height: 20px;
   font-weight: bold;
   border-radius: 4px;
-  padding: 9px 18px 9px 18px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  width: 140px;
 }
 
 .catalog-results-view {
@@ -674,6 +685,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 140px;
 }
 
 .rating {
@@ -686,6 +698,7 @@ body {
   border-radius: 4px;
   margin: 0;
   padding: 0;
+  width: 140px;
 }
 
 .page-location {
