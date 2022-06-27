@@ -191,8 +191,8 @@ body {
 
 .advantages-number {
   line-height: 21px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .advantages-1-sedona {
@@ -302,7 +302,8 @@ body {
 
 .hotels-search {
   text-align: center;
-  height: 417px;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 
 .hotels-search-1 {
@@ -311,13 +312,13 @@ body {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  padding: 91px 451px 29px 452px;
+  margin-bottom: 29px;
+  text-align: center;
 }
 
 .hotels-search-2 {
   color: #333333;
   margin: 0;
-  padding-bottom: 68px;
 }
 
 .subscription {
@@ -353,6 +354,10 @@ body {
   background-color: #756157;
   border-radius: 4px;
   padding: 17px 150px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
 }
 
 .email-button {
@@ -548,15 +553,18 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 1057px;
 }
 
 .catalog-results-item {
   display: flex;
   flex-direction: column;
-  width: 340px;
-  height: 438px;
-  padding-right: 18px;
+  padding: 20px;
 }
+
+/*.catalog-results-item:not(:nth-of-type(3)) {
+  margin-right: 18px;
+}*/
 
 .amount-result {
   font-size: 30px;
@@ -566,6 +574,12 @@ body {
   color: #000000;
   margin: 0;
   padding-right: 191px;
+}
+
+.catalog-results-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .select-control {
@@ -581,24 +595,36 @@ body {
   font-weight: bold;
   margin: 0;
   padding: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-results-price {
+  display: flex;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   margin: 0;
   padding: 0;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
+.catalog-results-rating {
+  display: flex;
+  justify-content: space-between;
 }
 
 .result-hotel {
   margin: 0;
   padding: 0;
+  width: 140px;
 }
 
 .result-price {
   margin: 0;
   padding: 0;
+  width: 140px;
 }
 
 .catalog-results-link {
@@ -611,6 +637,9 @@ body {
   line-height: 20px;
   font-weight: bold;
   border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  width: 140px;
 }
 
 .catalog-results-favorites {
@@ -619,6 +648,9 @@ body {
   line-height: 20px;
   font-weight: bold;
   border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  width: 140px;
 }
 
 .catalog-results-view {
@@ -653,6 +685,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 140px;
 }
 
 .rating {
@@ -665,6 +698,7 @@ body {
   border-radius: 4px;
   margin: 0;
   padding: 0;
+  width: 140px;
 }
 
 .page-location {
@@ -680,10 +714,6 @@ body {
   list-style-type: none;
   padding-top: 30px;
   padding-bottom: 25px;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .pagination-link {
