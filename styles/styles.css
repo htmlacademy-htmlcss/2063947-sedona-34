@@ -548,12 +548,15 @@ body {
 }
 
 .catalog-results-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
   margin: 0;
   padding: 0;
   list-style-type: none;
   width: 1057px;
+  margin-bottom: 66px;
+  margin: 0 auto;
 }
 
 .catalog-results-item {
@@ -561,10 +564,6 @@ body {
   flex-direction: column;
   padding: 20px;
 }
-
-/*.catalog-results-item:not(:nth-of-type(3)) {
-  margin-right: 18px;
-}*/
 
 .amount-result {
   font-size: 30px;
@@ -705,10 +704,13 @@ body {
   display: flex;
   width: 1056px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .pagination {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  column-gap: 8px;
   margin: 0;
   padding: 0;
   list-style-type: none;
