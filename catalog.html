@@ -21,15 +21,18 @@
             <a class="navigation-link-main" href="#">О Седоне</a>
           </li>
           <li class="navigation-item-main">
-            <a class="navigation-link-main navigation-link-current-catalog">Гостиницы</a>
+            <a class="navigation-link-main navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-list-user">
-          <li class="navigation-item-user">
+          <li class="navigation-item-user navigation-item-search">
             <a class="navigation-link-user" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item-user">
-            <a class="navigation-link-user" href="#"><span class="visually-hidden">Лайк</span></a>
+            <a class="navigation-link-user" href="#">
+              <span class="visually-hidden">Лайк</span>
+              <span class="favourites-amount">12</span>
+            </a>
           </li>
           <li class="navigation-item-user">
             <a class="button navigation-link-user want-here-button" href="#">Хочу сюда!</a>
@@ -145,8 +148,8 @@
           </select>
 
           <ul class="catalog-results-view">
-            <li class="button card-grid-toggle card-grid-toggle-current">
-              <a href="#">
+            <li class="button card-grid-toggle">
+              <a class="card-grid-toggle-link card-grid-toggle-current" href="#">
                 <svg width="16" height="14" aria-hidden="true"
                 focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14">
                 <path d="M4 0H0V6H4V0Z" fill="black"/>
@@ -161,7 +164,7 @@
             </li>
 
             <li class="button card-grid-toggle">
-              <a href="#">
+              <a class="card-grid-toggle-link" href="#">
                 <svg width="16" height="14" aria-hidden="true"
                 focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14">
                 <path d="M16 12H0V14H16V12Z" fill="black"/>
@@ -172,7 +175,7 @@
             </li>
 
             <li class="button card-grid-toggle">
-              <a href="#">
+              <a class="card-grid-toggle-link" href="#">
                 <svg width="16" height="14" aria-hidden="true"
                 focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14">
                 <path d="M2 0H0V2H2V0Z" fill="black"/>
@@ -311,7 +314,6 @@
           </ul>
 
           <div class="page-location">
-
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
@@ -332,21 +334,13 @@
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
-
             <p class="hotels-amount">Гостиниц на странице:</p>
-
-              <div class="hotels-amount-box">
-                <span class="hotels-amount-inside">4</span>
-                <a href="#" class="hotels-amount-arrow">
-                  <svg width="12" height="8" aria-hidden="true"
-                  focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8">
-                  <path d="m6.67 7.21 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5
-                  4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"
-                  fill="#000"/>
-                  </svg>
-                </a>
-              </div>
-
+            <select class="select-hotels-amount" aria-label="Сортировка">
+              <option value="four">4</option>
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+            </select>
           </div>
         </section>
       </div>
