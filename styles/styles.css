@@ -223,6 +223,11 @@ body {
   padding: 51px 371px 82px 371px;
 }
 
+.image-sedona::after {
+  position: absolute;
+  background-image: url("../images/divider.svg");
+}
+
 .image-sedona-picture {
   display: block;
 }
@@ -919,6 +924,9 @@ body {
 }
 
 .card-grid-toggle-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 48px;
   height: 48px;
