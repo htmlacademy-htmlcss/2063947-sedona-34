@@ -513,6 +513,8 @@ body {
 }
 
 .field {
+  margin: 0;
+  padding: 20px 22px;
   font-size: 18px;
   line-height: 21px;
   font-family: inherit;
@@ -748,14 +750,17 @@ body {
   margin-top: 20px;
 }
 
-.price-scroll {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  margin-right: 70px;
-  width: 288px;
-  height: 148px;
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 32px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: white;
 }
 
 .catalog-results-top {
