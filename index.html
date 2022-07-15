@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <title>Городок Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -225,6 +226,58 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+
+          <form class="modal-form-search" action="https://echo.htmlacademy.ru/" method="post">
+
+            <div class="modal-field-group-date">
+              <p class="modal-field-group">
+                <label class="modal-field-label" for="arrival-date">Дата заезда:</label>
+                <input class="field modal-field-date" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+                <button class="modal-date-button" type="button">...</button>
+              </p>
+              <span class="modal-date-text modal-date-text-false">Мы не можем отправить вас в прошлое.</span>
+              <p class="modal-field-group">
+                <label class="modal-field-label" for="depature-date">Дата выезда:</label>
+                <input class="field modal-field-date" type="text" id="depature-date" name="depature-date" placeholder="1 сентября 2021">
+                <button class="modal-date-button" type="button">...</button>
+              </p>
+              <span class="modal-date-text">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+
+            <div class="modal-field-group-visitors">
+              <p class="modal-field-group">
+                <label class="modal-field-label" for="adults">Взрослые:</label>
+                <button class="minus-button" type="button">...</button>
+                <input class="field modal-field-visitors" type="text" id="adults" name="adults" placeholder="2">
+                <button class="plus-button" type="button">...</button>
+              </p>
+              <p class="modal-field-group">
+                <label class="modal-field-label" for="children">Дети:</label>
+                <button class="minus-button" type="button">...</button>
+                <input class="field modal-field-visitors" type="text" id="children" name="children" placeholder="1">
+                <button class="plus-button" type="button">...</button>
+              </p>
+            </div>
+
+            <a class="button modal-search-link" href="#">Найти</a>
+
+          </form>
+
+
+        </section>
+
+      </div>
+    </div>
+
   </body>
 
 </html>
