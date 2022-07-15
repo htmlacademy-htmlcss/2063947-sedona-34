@@ -230,49 +230,57 @@
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть.</span>
+          <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
 
           <form class="modal-form-search" action="https://echo.htmlacademy.ru/" method="post">
-
-            <div class="modal-field-group-date">
-              <p class="modal-field-group">
-                <label class="modal-field-label" for="arrival-date">Дата заезда:</label>
+            <div class="modal-field-line modal-field-line-grid">
+              <label class="modal-field-label" for="arrival-date">Дата заезда:</label>
+              <div class="modal-input-wrapper">
                 <input class="field modal-field-date" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
-                <button class="modal-date-button" type="button">...</button>
-              </p>
+                <button class="modal-date-button" type="button">ИКОНКА</button>
+              </div>
+
               <span class="modal-date-text modal-date-text-false">Мы не можем отправить вас в прошлое.</span>
-              <p class="modal-field-group">
-                <label class="modal-field-label" for="depature-date">Дата выезда:</label>
+            </div>
+
+            <div class="modal-field-line modal-field-line-grid">
+              <label class="modal-field-label" for="depature-date">Дата выезда:</label>
+              <div class="modal-input-wrapper">
                 <input class="field modal-field-date" type="text" id="depature-date" name="depature-date" placeholder="1 сентября 2021">
-                <button class="modal-date-button" type="button">...</button>
-              </p>
+                <button class="modal-date-button" type="button">ИКОНКА</button>
+              </div>
               <span class="modal-date-text">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
-            <div class="modal-field-group-visitors">
-              <p class="modal-field-group">
+            <div class="modal-field-line modal-field-line-flex">
+              <div class="modal-field-counter-group">
                 <label class="modal-field-label" for="adults">Взрослые:</label>
-                <button class="minus-button" type="button">...</button>
-                <input class="field modal-field-visitors" type="text" id="adults" name="adults" placeholder="2">
-                <button class="plus-button" type="button">...</button>
-              </p>
-              <p class="modal-field-group">
+                <div class="modal-field-counter-input-wrapper">
+                  <button class="minus-button" type="button">-</button>
+                  <input class="field modal-field-visitors" type="text" id="adults" name="adults" placeholder="2">
+                  <button class="plus-button" type="button">+</button>
+                </div>
+              </div>
+              <div class="modal-field-counter-group">
                 <label class="modal-field-label" for="children">Дети:</label>
-                <button class="minus-button" type="button">...</button>
-                <input class="field modal-field-visitors" type="text" id="children" name="children" placeholder="1">
-                <button class="plus-button" type="button">...</button>
-              </p>
+                <div class="modal-info">
+                  <button class="modal-info-button" type="button">i</button>
+                  <div class="modal-info-popup">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+                </div>
+                <div class="modal-field-counter-input-wrapper">
+                  <button class="minus-button" type="button">-</button>
+                  <input class="field modal-field-visitors" type="text" id="children" name="children" placeholder="1">
+                  <button class="plus-button" type="button">+</button>
+                </div>
+              </div>
             </div>
 
-            <a class="button modal-search-link" href="#">Найти</a>
-
+            <button type="submit" class="button modal-search-link">Найти</button>
           </form>
-
-
         </section>
 
       </div>
