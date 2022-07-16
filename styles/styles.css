@@ -797,6 +797,22 @@ body {
   background: transparent;
   color: white;
   margin-top: 20px;
+  padding: 4px 14px 5px 13px;
+  width: 100px;
+  align-self: center;
+}
+
+.reset-button:hover {
+  color: rgba(255, 255, 255, 0.6)
+}
+
+.reset-button:focus {
+  box-shadow: 0 0 0 3px #83B3D3;
+  border-radius: 4px;
+}
+
+.reset-button:active {
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .control {
@@ -913,10 +929,24 @@ body {
   cursor: pointer;
 }
 
-.range-toggle:hover,
-.range-toggle:focus,
+.range-toggle:hover {
+  background: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.range-toggle:focus {
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px #83B3D3,
+              0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
 .range-toggle:active {
-  background-color: #E6E6E6;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 2px #83B3D3,
+              0 7px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .toggle-min {
@@ -968,6 +998,11 @@ body {
   height: 100%;
   width: 100%;
   padding-right: 50px;
+}
+
+.range-input:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6);
+  border-radius: 4px 0 0 4px;
 }
 
 .range-input-inside {
@@ -1550,10 +1585,24 @@ body {
   border-radius: 10px;
 }
 
+.modal-search-link:hover {
+  background: #68A2CA;
+}
+
+.modal-search-link:focus {
+  background: #68A2CA;
+  border: 3px solid #756257;
+}
+
+.modal-search-link:active {
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .modal-info{
   position: relative;
 }
-.modal-info-button{
+.modal-info-button {
   background: #83B3D3;
   width: 25px;
   height: 25px;
@@ -1566,6 +1615,11 @@ body {
   margin-left: 5px;
   margin-right: 18px;
 }
+
+.modal-info-button:active {
+  background: #68A2CA;
+}
+
 .modal-info-popup{
   background: #333333;
   color:  #fff;
