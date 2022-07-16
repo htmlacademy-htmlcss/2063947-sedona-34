@@ -228,9 +228,9 @@
     </footer>
 
     <div class="modal-container modal-container-close">
-      <div class="modal modal-auth">
+      <div class="modal">
         <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -240,8 +240,8 @@
             <div class="modal-field-line modal-field-line-grid">
               <label class="modal-field-label" for="arrival-date">Дата заезда:</label>
               <div class="modal-input-wrapper">
-                <input class="field modal-field-date" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
-                <button class="modal-date-button" type="button">ИКОНКА</button>
+                <input class="field modal-field-date" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020" required>
+                <button class="modal-date-button" type="button"></button>
               </div>
 
               <span class="modal-date-text modal-date-text-false">Мы не можем отправить вас в прошлое.</span>
@@ -250,8 +250,8 @@
             <div class="modal-field-line modal-field-line-grid">
               <label class="modal-field-label" for="depature-date">Дата выезда:</label>
               <div class="modal-input-wrapper">
-                <input class="field modal-field-date" type="text" id="depature-date" name="depature-date" placeholder="1 сентября 2021">
-                <button class="modal-date-button" type="button">ИКОНКА</button>
+                <input class="field modal-field-date" type="text" id="depature-date" name="depature-date" placeholder="1 сентября 2021" required>
+                <button class="modal-date-button" type="button"></button>
               </div>
               <span class="modal-date-text">На эти даты есть свободные номера. Пока есть.</span>
             </div>
@@ -259,27 +259,55 @@
             <div class="modal-field-line modal-field-line-flex">
               <div class="modal-field-counter-group">
                 <label class="modal-field-label" for="adults">Взрослые:</label>
-                <div class="modal-field-counter-input-wrapper">
-                  <button class="minus-button" type="button">-</button>
-                  <input class="field modal-field-visitors" type="text" id="adults" name="adults" placeholder="2">
-                  <button class="plus-button" type="button">+</button>
+                <div class="modal-field-counter-input-wrapper modal-field-counter-input-wrapper-adults">
+                  <button class="minus-button" type="button">
+                    <svg width="13" height="1" aria-hidden="true"
+                    focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 1">
+                    <path d="M0 0v1h13V0H0Z" fill=""/>
+                    </svg>
+                    <span class="visually-hidden">Уменьшить количество взрослых.</span>
+                  </button>
+                  <input class="field modal-field-visitors" type="text" id="adults" name="adults" placeholder="2" min="0">
+                  <button class="plus-button" type="button">
+                    <svg width="13" height="13" aria-hidden="true"
+                    focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill=""/>
+                    </svg>
+                    <span class="visually-hidden">Увеличить количество взрослых.</span>
+                  </button>
                 </div>
               </div>
+
               <div class="modal-field-counter-group">
                 <label class="modal-field-label" for="children">Дети:</label>
                 <div class="modal-info">
                   <button class="modal-info-button" type="button">i</button>
                   <div class="modal-info-popup">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
                 </div>
-                <div class="modal-field-counter-input-wrapper">
-                  <button class="minus-button" type="button">-</button>
-                  <input class="field modal-field-visitors" type="text" id="children" name="children" placeholder="1">
-                  <button class="plus-button" type="button">+</button>
+                <div class="modal-field-counter-input-wrapper modal-field-counter-input-wrapper-children">
+                  <button class="minus-button" type="button">
+                    <svg width="13" height="1" aria-hidden="true"
+                    focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 1">
+                    <path d="M0 0v1h13V0H0Z" fill=""/>
+                    </svg>
+                    <span class="visually-hidden">Уменьшить количество детей.</span>
+                  </button>
+                  <input class="field modal-field-visitors" type="text" id="children" name="children" placeholder="1" min="0">
+                  <button class="plus-button" type="button">
+                    <svg width="13" height="13" aria-hidden="true"
+                    focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill=""/>
+                    </svg>
+                    <span class="visually-hidden">Увеличить количество детей.</span>
+                  </button>
                 </div>
+
               </div>
             </div>
 
-            <button type="submit" class="button modal-search-link">Найти</button>
+            <button type="submit" class="button modal-search-link">Найти
+              <span class="visually-hidden">Найти.</span>
+            </button>
           </form>
         </section>
 
